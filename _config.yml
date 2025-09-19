@@ -23,14 +23,14 @@ repository               : "jokoeliyanto/jokoeliyanto.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  avatar           : "Joko Eliyanto.png"
+  name             : "Joko Eliyanto, S.Si., M.Pd"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Mathematicians & Data Scientist"
+  location         : "Yogyakarta Special Region, Indonesia"
+  employer         : "Teman Data"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "jokoeliyanto@gmail.com" 
 
   # Academic websites
   academia         : # URL
