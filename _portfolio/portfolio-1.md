@@ -1,38 +1,27 @@
 ---
-title: "Credit Default Risk Prediction"
-excerpt: "Credit Default Prediction with Machine Learning<br/><img src='/images/credit-default.png'>"
+title: "Credit Card Default Prediction Using Machine Learning"
+excerpt: "<img src='/images/credit_card_default_ml.png'>"
 collection: portfolio
 ---
 
-## Credit Default Prediction with Machine Learning
 
-### Business Understanding
-In the banking industry, **credit default risk** is one of the biggest challenges. When borrowers fail to repay their loans or credit card obligations, banks face:
+Business Understanding
+====== 
 
-- Direct financial losses  
-- A decline in loan portfolio quality  
-- Increased cost of loss reserves  
+**Problem Statement**
 
-Traditionally, credit scoring systems classify applicants into *eligible* or *not eligible*. However, this binary approach does not capture the variation in risk. For example, a borrower with a **10% default probability** is different from one with **40%**, even though both may be categorized as *eligible*.  
+The bank faces challenges in assessing creditworthiness due to a manual and traditional credit scoring process. This leads to slow credit evaluation, limited accuracy, and an inability to differentiate risk levels among borrowers. As a result, the bank may grant loans to high-risk customers, which can lower portfolio quality and increase financial losses.
 
-With Machine Learning, banks can:
+**Business Objective & Goal**
 
-- Predict the **probability of default** for each customer instead of a binary classification.  
-- Improve risk management accuracy.  
-- Optimize loan portfolios by adjusting credit limits, interest rates, or additional requirements according to risk levels.  
-- Reduce losses and increase long-term profitability.  
-
-**Key business questions that ML models can answer:**
-
-1. Who are the customers with the highest risk of default?  
-2. What is the probability of default for each borrower?  
-3. How can banks balance credit growth with risk management?  
-
-With these insights, management can build a more **data-driven credit strategy** that is fairer, more accurate, and sustainable.
+1. Develop a ML model to predict customer default probability with at least 85% accuracy within 3 months.
+2. Reduce credit scoring time from about 2 hours to under 10 minutes through automation.
+3. Segment customers by risk level (low, medium, high) based on that ML model
 
 ---
 
-### Data Understanding
+Data Understanding
+====== 
 The dataset used is **Default of Credit Card Clients** from the [UCI Machine Learning Repository](https://doi.org/10.24432/C55S3H), containing **30,000 records**.  
 The target variable is `default.payment.next.month` (1 = default, 0 = no default).  
 
@@ -51,6 +40,8 @@ It includes **23 explanatory variables**, with highlights as follows:
 
 ---
 
-### Reference
+
+Reference
+====== 
 Yeh, I. (2009). *Default of Credit Card Clients* [Dataset]. UCI Machine Learning Repository.  
 👉 https://doi.org/10.24432/C55S3H
