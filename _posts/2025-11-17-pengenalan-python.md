@@ -14,7 +14,9 @@ tidak terbatas pada pengembangan web saja. Bahkan python juga populer karena ban
 Apa itu Program dan Pemrograman?
 ===
 
-Program adalah serangkaian instruksi yang ditulis dalam bahasa pemrograman tertentu yang memberi tahu komputer bagaimana melakukan suatu tugas atau memecahkan suatu masalah.  
+<img src="/images/program_vs_programming.png" width="1200">
+
+> Program adalah serangkaian instruksi yang ditulis dalam bahasa pemrograman tertentu yang memberi tahu komputer bagaimana melakukan suatu tugas atau memecahkan suatu masalah.  
 
 Pemrograman adalah proses membuat dan merancang instruksi-instruksi tersebut, menggunakan bahasa pemrograman untuk menulis, menguji, dan memperbaiki kode agar mencapai tujuan tertentu.
 
@@ -36,7 +38,7 @@ Python juga mendukung berbagai paradigma pemrograman, seperti:
 - Pemrograman fungsional  
 
 
-Apa yang Bisa Dilakukan Python?
+Python digunakan untuk apa saja?
 ===
 
 Python sangat serbaguna dan dapat digunakan dalam berbagai domain:
