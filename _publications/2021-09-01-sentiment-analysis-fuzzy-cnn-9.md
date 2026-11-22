@@ -1,7 +1,7 @@
 ---
 title: "Fuzzy sentiment analysis using convolutional neural network"
 collection: publications
-category: conference
+category: conferences
 permalink: /publication/2021-09-01-sentiment-analysis-fuzzy-cnn-9
 excerpt: 'Fuzzy sentiment analysis using convolutional neural network'
 date: 2020-09-01

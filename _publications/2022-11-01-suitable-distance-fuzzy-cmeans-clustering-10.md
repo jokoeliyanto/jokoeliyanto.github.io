@@ -1,7 +1,7 @@
 ---
 title: "The suitable distance function for fuzzy CMeans clustering"
 collection: publications
-category: conference
+category: conferences
 permalink: /publication/2022-11-01-suitable-distance-fuzzy-cmeans-clustering-10
 excerpt: 'The suitable distance function for fuzzy CMeans clustering'
 date: 2022-11-01

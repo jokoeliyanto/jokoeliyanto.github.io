@@ -1,0 +1,33 @@
+{% include base_path %}
+{% comment %}
+  Kartu portofolio. Front matter yang dipakai:
+    title, description, gif, issuer, date, tech (list), repo, demo, credential
+{% endcomment %}
+<article class="pf-card">
+  <a class="pf-card__media" href="{{ base_path }}{{ post.url }}">
+    {% if post.gif %}
+      <img src="{{ base_path }}{{ post.gif }}" alt="Demo {{ post.title }}" loading="lazy">
+    {% else %}
+      <img src="{{ base_path }}/images/500x300.png" alt="{{ post.title }}" loading="lazy">
+    {% endif %}
+  </a>
+  <div class="pf-card__body">
+    <h3 class="pf-card__title"><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></h3>
+    {% if post.issuer or post.date %}
+      <p class="pf-card__meta">
+        {% if post.issuer %}{{ post.issuer }}{% endif %}{% if post.issuer and post.date %} · {% endif %}{% if post.date %}{{ post.date | date: "%B %Y" }}{% endif %}
+      </p>
+    {% endif %}
+    {% if post.description %}<p class="pf-card__desc">{{ post.description }}</p>{% endif %}
+    {% if post.tech %}
+      <ul class="pf-card__tags">
+        {% for t in post.tech %}<li>{{ t }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+    <div class="pf-card__links">
+      {% if post.repo %}<a class="btn btn--primary btn--small" href="{{ post.repo }}" target="_blank" rel="noopener"><i class="fab fa-github"></i> Repository</a>{% endif %}
+      {% if post.demo %}<a class="btn btn--inverse btn--small" href="{{ post.demo }}" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a>{% endif %}
+      {% if post.credential %}<a class="btn btn--inverse btn--small" href="{{ post.credential }}" target="_blank" rel="noopener"><i class="fas fa-certificate"></i> Credential</a>{% endif %}
+    </div>
+  </div>
+</article>

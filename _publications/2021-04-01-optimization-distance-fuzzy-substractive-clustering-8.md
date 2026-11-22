@@ -1,7 +1,7 @@
 ---
 title: "An Optimization of Several Distance Function on Fuzzy Substractive Clustering"
 collection: publications
-category: conference
+category: conferences
 permalink: /publication/2021-04-01-optimization-distance-fuzzy-substractive-clustering-8
 excerpt: 'An Optimization of Several Distance Function on Fuzzy Substractive Clustering'
 date: 2021-04-01

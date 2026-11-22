@@ -68,10 +68,14 @@ Service and leadership
 Address: RT 04, Seropan 3, Muntuk, Dlingo, Bantul, D.I. Yogyakarta, 55783  
 Mobile: +62 821 8311 2655  
 
+<div style="display: none;">
+
 Professional Summary
 ======  
 Results-driven **Data Scientist** with 5+ years of experience across industry and education. Skilled in transforming complex datasets into actionable insights through statistical analysis, visualization, and machine learning. Strong academic foundation in Mathematics with additional certifications in statistics, big data, AI, and data engineering.  
 Proficient in **Python**, **SQL**, **Tableau**, **Power BI**, **Kibana**, **Airflow**, and web scraping. Experienced in developing **AI-powered chatbots** using **Large Language Models (LLM)** and **RAG frameworks** for data-driven solutions.
+
+</div>
 
 ---
 
@@ -161,10 +165,14 @@ Talks
 
 ---
 
+<div style="display: none;">
+
 Training
 ======  
 * 2020: Graduate, *Bangkit Machine Learning Academy* – Google  
-* 2019: *Big Data Analytics* – Fresh Graduate Academy, Kominfo  
+* 2019: *Big Data Analytics* – Fresh Graduate Academy, Kominfo
+
+</div>  
 
 ---
 

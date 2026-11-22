@@ -19,6 +19,9 @@ main:
     
   - title: "Portfolio"
     url: /portfolio/
+
+  - title: "Free Courses"
+    url: /free-courses/
         
   - title: "Blog Posts"
     url: /year-archive/

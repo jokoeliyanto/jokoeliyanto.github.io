@@ -7,8 +7,55 @@ author_profile: true
 
 {% include base_path %}
 
+<style>
+  .pf-section { margin-bottom: 3em; }
+  .pf-section > h2 { border-bottom: 1px solid rgba(127,127,127,.3); padding-bottom: .3em; }
+  .pf-section__intro { font-size: .9em; opacity: .8; }
+  .pf-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5em; }
+  .pf-card { display: flex; flex-direction: column; border: 1px solid rgba(127,127,127,.3); border-radius: 8px; overflow: hidden; }
+  .pf-card__media { display: block; aspect-ratio: 16 / 10; background: rgba(127,127,127,.12); }
+  .pf-card__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .pf-card__body { padding: 1em; display: flex; flex-direction: column; flex: 1; }
+  .pf-card__title { margin: 0 0 .3em; font-size: 1.1em; }
+  .pf-card__title a { text-decoration: none; }
+  .pf-card__meta { margin: 0 0 .6em; font-size: .75em; opacity: .7; }
+  .pf-card__desc { margin: 0 0 .8em; font-size: .85em; }
+  .pf-card__tags { list-style: none; margin: 0 0 1em; padding: 0; display: flex; flex-wrap: wrap; gap: .4em; }
+  .pf-card__tags li { margin: 0; font-size: .7em; padding: .15em .6em; border-radius: 999px; background: rgba(127,127,127,.15); }
+  .pf-card__links { margin-top: auto; display: flex; flex-wrap: wrap; gap: .5em; }
+  .pf-card__links .btn { margin: 0; }
+</style>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+{% assign certs = site.portfolio | where: "category", "certification" | sort: "order" %}
+{% assign pros = site.portfolio | where: "category", "professional" | sort: "order" %}
+{% assign courses = site.portfolio | where: "category", "course" | sort: "order" %}
 
+<section class="pf-section" id="certification">
+  <h2>🎓 Certification Portfolio</h2>
+  <p class="pf-section__intro">Projects I completed as part of certification exams.</p>
+  <div class="pf-grid">
+    {% for post in certs %}
+      {% include portfolio-card.html %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="pf-section" id="professional" style="display: none;">
+  <h2>💼 Professional Portfolio</h2>
+  <p class="pf-section__intro">End-to-end projects from real business cases.</p>
+  <div class="pf-grid">
+    {% for post in pros %}
+      {% include portfolio-card.html %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="pf-section" id="course" style="display: none;">
+  <h2>📚 Course Portfolio</h2>
+  <p class="pf-section__intro">Final projects from courses and bootcamps I attended.</p>
+  <div class="pf-grid">
+    {% for post in courses %}
+      {% include portfolio-card.html %}
+    {% endfor %}
+  </div>
+</section>

@@ -1,6 +1,12 @@
 ---
 title: "Credit Card Default Prediction Using Machine Learning"
 excerpt: "<img src='/images/credit_card_default_ml.png'>"
+category: professional
+order: 2
+description: "Predict credit card customer default probability and risk segmentation (low, medium, high)."
+gif: /images/credit_card_default_ml.png
+tech: [Python, Scikit-learn]
+repo:
 collection: portfolio
 ---
 

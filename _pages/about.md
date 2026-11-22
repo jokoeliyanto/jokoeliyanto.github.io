@@ -17,7 +17,7 @@ Results-driven Data Scientist with 5+ years of experience across industry applic
 1. IBM - Data Science Professional Certificate
 2. BNSP Indonesia - Associate Data Scientist  
 
-### 📱 Sosial Media
+### 📱 Social Media
 
 
 <p>
