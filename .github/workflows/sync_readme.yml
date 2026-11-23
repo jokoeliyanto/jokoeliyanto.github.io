@@ -1,0 +1,34 @@
+name: Sync Home Page from Profile README
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # every 6 hours
+  workflow_dispatch:        # manual run from the Actions tab
+  repository_dispatch:      # triggered by jokoeliyanto/jokoeliyanto on README change
+    types: [readme-updated]
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Generate _pages/about.md from README
+      run: python scripts/sync_readme.py
+
+    - name: Commit changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add _pages/about.md
+        git commit -m "Sync home page with profile README" || echo "No changes to commit"
+        git push
